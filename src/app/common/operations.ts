@@ -8,9 +8,9 @@ export const INCREMENT_OPERATION = 'Increment an operstion';
 export const DECREMENT_OPERATION = 'Decrement an operstion';
 
 // The initial state of the operations
-const initialState:State = [];
+const initialState = Array<Operation>();
 
-export const operationsReducer: ActionReducer = (state = initialState, action: Action) => {
+export const operationsReducer: ActionReducer<Array<Operation>> = (state = initialState, action: Action) => {
   switch (action.type) {
 
     case ADD_OPERATION:
